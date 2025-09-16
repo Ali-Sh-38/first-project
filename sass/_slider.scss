@@ -1,0 +1,80 @@
+.swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+
+.swiper-button-next,.swiper-button-prev {
+  color: black;      /* رنگ فلش‌ها */
+  top: auto;         /* بالارو بی‌اثر می‌کنیم */
+  bottom: 40px;   /* میاریم پایین */
+
+  --swiper-navigation-size: 35px; /* سایز فلش‌ها */
+}
+//  این (--) یعنی این یک متغیر سی اس اس هست، نه یک ویژگی معمولی
+
+.swiper-button-next {
+  right: 220px !important;
+}
+
+.swiper-button-prev {
+  left: auto !important;        /* مقدار پیشفرض رو پاک می‌کنیم */
+  right: 140px !important;       /* بیار کنار دکمه بعدی */
+}
+
+.swiper-pagination {
+    width: auto !important;       /* تا کل عرض نگیره */
+    left: auto !important;        /* مقدار پیشفرضو پاک می‌کنیم */
+    right: 145px ;       /* فاصله از راست */
+    bottom: 80px !important;
+}
+
+@media (max-width: 1024px){
+  .swiper-button-next {
+  right: 160px !important;
+  scale: 0.8;
+}
+.swiper-button-prev {
+  left: auto !important;        /* مقدار پیشفرض رو پاک می‌کنیم */
+  right: 80px !important;       /* بیار کنار دکمه بعدی */
+  scale: 0.8;
+}
+.swiper-pagination {
+    width: auto !important;       /* تا کل عرض نگیره */
+    left: auto !important;        /* مقدار پیشفرضو پاک می‌کنیم */
+    right: 85px ;       /* فاصله از راست */
+    bottom: 70px !important;
+    scale: 0.8;
+}
+}
+
+.swiper-pagination-bullet{
+  background: transparent; /* تو خالی */
+  border: 2px solid black;
+  opacity: 1; 
+  width: 10px;
+  height: 10px;
+}
+
+
+.swiper-pagination-bullet-active {
+  background: black;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .mySwiper .swiper-button-next,
+  .mySwiper .swiper-button-prev,
+  .mySwiper .swiper-pagination {
+    display: none !important;
+  }
+}

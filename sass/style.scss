@@ -1,0 +1,17 @@
+@use "font";
+@use "slider";
+@use "grid";
+
+*{
+    box-sizing: border-box;
+}
+body{
+    user-select: none;
+}
+.center{
+    position: absolute;
+    left: 50% ;
+    transform: translateX(-50%);
+}
+
+
